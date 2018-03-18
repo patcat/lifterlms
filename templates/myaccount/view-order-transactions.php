@@ -46,10 +46,10 @@ if ( ! $transactions || ! $transactions['transactions'] ) {
 			<tr>
 				<td colspan="5">
 					<?php if ( $transactions['page'] > 1 ) : ?>
-						<a class="llms-button-secondary small" href="<?php echo esc_url( add_query_arg( 'txnpage', $transactions['page'] - 1 ) ); ?>#llms-txns"><?php _e( 'Back', 'lifterlms' ); ?></a>
+						<a class="btn" href="<?php echo esc_url( add_query_arg( 'txnpage', $transactions['page'] - 1 ) ); ?>#llms-txns"><?php _e( 'Back', 'lifterlms' ); ?></a>
 					<?php endif; ?>
 					<?php if ( $transactions['page'] < $transactions['pages'] ) : ?>
-						<a class="llms-button-secondary small" href="<?php echo esc_url( add_query_arg( 'txnpage', $transactions['page'] + 1 ) ); ?>#llms-txns"><?php _e( 'Next', 'lifterlms' ); ?></a>
+						<a class="btn" href="<?php echo esc_url( add_query_arg( 'txnpage', $transactions['page'] + 1 ) ); ?>#llms-txns"><?php _e( 'Next', 'lifterlms' ); ?></a>
 					<?php endif; ?>
 				</td>
 			</tr>

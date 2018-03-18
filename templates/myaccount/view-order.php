@@ -178,7 +178,7 @@ llms_print_notices();
 
 						<?php llms_form_field( array(
 							'columns' => 12,
-							'classes' => 'llms-button-secondary',
+							'classes' => 'btn',
 							'id' => 'llms_cancel_subscription',
 							'value' => __( 'Cancel Subscription', 'lifterlms' ),
 							'last_column' => true,

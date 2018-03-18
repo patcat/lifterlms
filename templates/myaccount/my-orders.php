@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 						<?php endif; ?>
 					</td>
 					<td>
-						<a class="llms-button-primary small" href="<?php echo $order->get_view_link(); ?>"><?php _e( 'View', 'lifterlms' ); ?></a>
+						<a class="btn" href="<?php echo $order->get_view_link(); ?>"><?php _e( 'View', 'lifterlms' ); ?></a>
 					</td>
 				</tr>
 			<?php endforeach; ?>

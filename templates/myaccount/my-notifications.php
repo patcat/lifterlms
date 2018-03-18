@@ -34,11 +34,11 @@ $sep = apply_filters( 'lifterlms_my_account_navigation_link_separator', '&bull;'
 
 		<footer class="llms-sd-pagination llms-my-notifications-pagination">
 			<?php if ( $pagination['prev'] ) : ?>
-				<a class="llms-button-secondary small prev" href="<?php echo esc_url( $pagination['prev'] ); ?>">&lt; <?php _e( 'Back', 'lifterlms' ); ?></a>
+				<a class="btn small prev" href="<?php echo esc_url( $pagination['prev'] ); ?>">&lt; <?php _e( 'Back', 'lifterlms' ); ?></a>
 			<?php endif; ?>
 
 			<?php if ( $pagination['next'] ) : ?>
-				<a class="llms-button-secondary small next" href="<?php echo esc_url( $pagination['next'] ); ?>"><?php _e( 'Next', 'lifterlms' ); ?> &gt;</a>
+				<a class="btn small next" href="<?php echo esc_url( $pagination['next'] ); ?>"><?php _e( 'Next', 'lifterlms' ); ?> &gt;</a>
 			<?php endif; ?>
 		</footer>
 

@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 	<?php foreach ( $fields as $field ) : ?>
     <?php 
-      if (strpos($field["classes"], "button") !== false) {
+      if (strpos($field["classes"], "btn") !== false) {
         $field["classes"] = "btn auto";
       }
       llms_form_field( $field );

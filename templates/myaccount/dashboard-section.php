@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 	<?php if ( $more ) : ?>
 		<footer class="llms-sd-section-footer">
-			<a class="llms-button-secondary" href="<?php echo esc_url( $more['url'] ); ?>"><?php echo $more['text']; ?></a>
+			<a class="btn" href="<?php echo esc_url( $more['url'] ); ?>"><?php echo $more['text']; ?></a>
 		</footer>
 	<?php endif; ?>
 
