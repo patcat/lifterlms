@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 <?php if ( apply_filters( 'lifterlms_show_page_title', true ) ) : ?>
 
-	<h1 class="page-title"><?php lifterlms_page_title(); ?></h1>
+	<h1 class="body-content__title"><?php lifterlms_page_title(); ?></h1>
 
 <?php endif; ?>
 
@@ -35,6 +35,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 <?php do_action( 'lifterlms_after_main_content' ); ?>
 
-<?php do_action( 'lifterlms_sidebar' ); ?>
+<?php // do_action( 'lifterlms_sidebar' ); ?>
 
 <?php get_footer(); ?>

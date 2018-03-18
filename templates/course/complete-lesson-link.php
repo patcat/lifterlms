@@ -48,7 +48,7 @@ if ( 'publish' !== get_post_status( $quiz_id ) && ! current_user_can( 'edit_post
 
 					<?php llms_form_field( array(
 						'columns' => 12,
-						'classes' => 'llms-button-secondary auto button',
+						'classes' => 'btn',
 						'id' => 'llms_mark_incomplete',
 						'value' => apply_filters( 'lifterlms_mark_lesson_incomplete_button_text', __( 'Mark Incomplete', 'lifterlms' ), $lesson ),
 						'last_column' => true,
@@ -79,9 +79,9 @@ if ( 'publish' !== get_post_status( $quiz_id ) && ! current_user_can( 'edit_post
 
 				<?php llms_form_field( array(
 					'columns' => 12,
-					'classes' => 'llms-button-primary auto button',
+					'classes' => 'btn',
 					'id' => 'llms_mark_complete',
-					'value' => apply_filters( 'lifterlms_mark_lesson_complete_button_text', __( 'Mark Complete', 'lifterlms' ), $lesson ),
+					'value' => apply_filters( 'lifterlms_mark_lesson_complete_button_text', __( 'Mark As Complete!', 'lifterlms' ), $lesson ),
 					'last_column' => true,
 					'name' => 'mark_complete',
 					'required' => false,
