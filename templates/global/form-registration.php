@@ -47,7 +47,7 @@ if ( get_current_user_id() ) {
 
 			<?php llms_form_field( array(
 				'columns' => 3,
-				'classes' => 'llms-button-action',
+				'classes' => 'btn',
 				'id' => 'llms_register_person',
 				'value' => apply_filters( 'lifterlms_registration_button_text', __( 'Register', 'lifterlms' ) ),
 				'last_column' => true,

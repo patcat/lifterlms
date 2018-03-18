@@ -24,7 +24,7 @@ if ( is_user_logged_in() ) { return; }
 
 <div class="col-1 llms-person-login-form-wrapper">
 
-	<form action="" class="llms-login" method="POST">
+	<form action="" class="llms-login course-box" method="POST">
 
 		<h4 class="llms-form-heading"><?php _e( 'Login', 'lifterlms' ); ?></h4>
 

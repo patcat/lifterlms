@@ -16,9 +16,9 @@ $count = count( $instructors );
 
 <section class="llms-instructor-info">
 	<h3 class="llms-meta-title"><?php echo _n( 'Course Instructor', 'Course Instructors', count( $instructors ), 'lifterlms' ); ?></h3>
-	<div class="llms-instructors llms-cols">
+	<div class="llms-instructors">
 		<?php foreach ( $instructors as $instructor ) : ?>
-			<div class="llms-col-<?php echo $count <= 4 ? $count : 4; ?>">
+			<div class="llms-instructor">
 				<?php echo llms_get_author( array(
 					'avatar_size' => 100,
 					'bio' => true,

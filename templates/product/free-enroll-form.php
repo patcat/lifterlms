@@ -27,5 +27,5 @@ if ( ! $uid || empty( $plan ) || ! $plan->has_free_checkout() ) {
 	<input name="form" type="hidden" value="free_enroll">
 	<input name="llms_agree_to_terms" type="hidden" value="yes">
 	<input id="llms-plan-id" name="llms_plan_id" type="hidden" value="<?php echo $plan->get( 'id' ); ?>">
-	<button class="llms-button-action button" type="submit"><?php echo $plan->get_enroll_text(); ?></button>
+	<button class="btn btn--cta" type="submit"><?php echo $plan->get_enroll_text(); ?></button>
 </form>

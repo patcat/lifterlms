@@ -16,7 +16,7 @@ $free = $plan->has_free_checkout();
 
 	<div class="llms-checkout-col llms-col-1">
 
-		<section class="llms-checkout-section billing-information">
+		<section class="llms-checkout-section billing-information course-box">
 
 			<h4 class="llms-form-heading">
 				<?php if ( ! $free ) : ?>
@@ -41,7 +41,7 @@ $free = $plan->has_free_checkout();
 	<div class="llms-checkout-col llms-col-2">
 
 		<?php if ( ! $free ) : ?>
-			<section class="llms-checkout-section order-summary">
+			<section class="llms-checkout-section order-summary course-box">
 
 				<h4 class="llms-form-heading"><?php _e( 'Order Summary', 'lifterlms' ); ?></h4>
 
@@ -63,7 +63,7 @@ $free = $plan->has_free_checkout();
 			</section>
 		<?php endif; ?>
 
-		<section class="llms-checkout-section payment-details">
+		<section class="llms-checkout-section payment-details course-box">
 
 			<h4 class="llms-form-heading">
 				<?php if ( ! $free ) : ?>
@@ -88,7 +88,7 @@ $free = $plan->has_free_checkout();
 					<?php llms_agree_to_terms_form_field(); ?>
 					<?php llms_form_field( array(
 						'columns' => 12,
-						'classes' => 'llms-button-action',
+						'classes' => 'btn',
 						'id' => 'llms_create_pending_order',
 						'value' => apply_filters( 'lifterlms_checkout_buy_button_text', ! $free ? __( 'Buy Now', 'lifterlms' ) : __( 'Enroll Now', 'lifterlms' ) ),
 						'last_column' => true,

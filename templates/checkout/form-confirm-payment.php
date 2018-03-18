@@ -14,11 +14,11 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 	<div class="llms-checkout-col llms-col-1">
 
-		<section class="llms-checkout-section">
+		<section class="llms-checkout-section course-box">
 
 			<h4 class="llms-form-heading"><?php _e( 'Billing Information', 'lifterlms' ); ?></h4>
 
-			<div class="llms-checkout-section-content">
+			<div class="llms-checkout-section-content course-box__content">
 				<?php do_action( 'lifterlms_checkout_confirm_before_billing_info' ); ?>
 				<?php foreach ( LLMS_Person_Handler::get_available_fields( 'checkout', $field_data ) as $field ) : ?>
 					<span class="llms-field-display <?php echo $field['id']; ?>"><?php echo $field['value']; ?></span><?php echo $field['last_column'] ? '<br>' : ' '; ?>
@@ -32,11 +32,11 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 	<div class="llms-checkout-col llms-col-2">
 
-		<section class="llms-checkout-section">
+		<section class="llms-checkout-section course-box">
 
 			<h4 class="llms-form-heading"><?php _e( 'Order Summary', 'lifterlms' ); ?></h4>
 
-			<div class="llms-checkout-section-content">
+			<div class="llms-checkout-section-content course-box__content">
 
 				<?php llms_get_template( 'checkout/form-summary.php', array(
 					'coupon' => $coupon,
@@ -48,10 +48,10 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 		</section>
 
-		<section class="llms-checkout-section">
+		<section class="llms-checkout-section course-box">
 
 			<h4 class="llms-form-heading"><?php _e( 'Payment Details', 'lifterlms' ); ?></h4>
-			<div class="llms-checkout-section-content llms-form-fields">
+			<div class="llms-checkout-section-content llms-form-fields course-box__content">
 
 				<div class="llms-payment-method">
 					<?php do_action( 'lifterlms_checkout_confirm_before_payment_method', $selected_gateway->get_id() ); ?>
@@ -69,7 +69,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 					<?php llms_form_field( array(
 						'columns' => 12,
-						'classes' => 'llms-button-action',
+						'classes' => 'btn',
 						'id' => 'llms_confirm_pending_order',
 						'value' => apply_filters( 'lifterlms_checkout_confirm_button_text', __( 'Confirm Payment', 'lifterlms' ) ),
 						'last_column' => true,
@@ -184,7 +184,7 @@ if ( ! $product || ! $order ) {
 		<form action="" method="POST">
 
 			<div class="llms-clear-box llms-center-content">
-				<input type="submit" class="button llms-button-primary" name="llms_confirm_order" value="<?php _e( 'Confirm Purchase', 'lifterlms' ); ?>" />
+				<input type="submit" class="btn" name="llms_confirm_order" value="<?php _e( 'Confirm Purchase', 'lifterlms' ); ?>" />
 			</div>
 
 			<?php wp_nonce_field( 'llms_confirm_order' ); ?>

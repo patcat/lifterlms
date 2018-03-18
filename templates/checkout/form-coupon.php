@@ -36,7 +36,7 @@ if ( isset( $plan ) && $plan->is_free() ) {
 			<?php llms_form_field( array(
 
 				'columns' => 12,
-				'classes' => 'llms-button-secondary',
+				'classes' => 'btn',
 				'id' => 'llms-apply-coupon',
 				'value' => __( 'Apply Coupon', 'lifterlms' ),
 				'last_column' => true,
@@ -54,7 +54,7 @@ if ( isset( $plan ) && $plan->is_free() ) {
 			<?php llms_form_field( array(
 
 				'columns' => 12,
-				'classes' => 'llms-button-secondary',
+				'classes' => 'btn',
 				'id' => 'llms-remove-coupon',
 				'value' => __( 'Remove Coupon', 'lifterlms' ),
 				'last_column' => true,

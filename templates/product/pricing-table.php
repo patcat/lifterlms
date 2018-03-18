@@ -103,7 +103,7 @@ $free_only = ( $has_free && ! $purchaseable );
 							'plan' => $plan,
 						) ); ?>
 					<?php else : $plan->get_checkout_url(); ?>
-						<a class="llms-button-action button" href="<?php echo $plan->get_checkout_url(); ?>"><?php echo $plan->get_enroll_text(); ?></a>
+						<a class="btn btn--cta" href="<?php echo $plan->get_checkout_url(); ?>"><?php echo $plan->get_enroll_text(); ?></a>
 					<?php endif; ?>
 
 				</div>

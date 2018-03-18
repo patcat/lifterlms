@@ -19,11 +19,11 @@
 			<div class="llms-notification-body"><?php echo $body; ?></div>
 		</div>
 
-		<?php if ( $icon ) : ?>
+		<?php /* if ( $icon ) : ?>
 			<aside class="llms-notification-aside">
 				<img class="llms-notification-icon" alt="<?php echo $title; ?>" src="<?php echo $icon; ?>">
 			</aside>
-		<?php endif; ?>
+		<?php endif; */ ?>
 	</section>
 
 	<?php if ( $footer ) : ?>

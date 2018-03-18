@@ -40,7 +40,7 @@ $field_data = ( 'post' === strtolower( $_SERVER['REQUEST_METHOD'] ) ) ? $_POST :
 
 			<?php llms_form_field( array(
 				'columns' => 3,
-				'classes' => 'llms-button-action',
+				'classes' => 'btn',
 				'id' => 'llms_update_person',
 				'value' => apply_filters( 'lifterlms_update_button_text', __( 'Save', 'lifterlms' ) ),
 				'last_column' => true,
